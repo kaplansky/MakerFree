@@ -1,0 +1,490 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section
+  display: block
+
+body
+  line-height: 1
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+html
+ height: auto
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1
+	font-family: $main-font
+	overflow-x: hidden
+	opacity: 1
+	color: #fff
+	background-color: #191E3F
+	height: auto
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+h1
+	color: #fff
+	font-size: 77px
+
+p
+	font-size: 19px
+
+#p_prldr
+	position: fixed
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	background-color: #191E3F
+	z-index: 1000
+ 
+
+.contpre
+	position: absolute
+	top: 40%
+	left: 48%
+ 
+.svg_anm 
+	position: absolute
+	width: 100px
+	height: 100px
+	background: url(../img/ring.gif) center center no-repeat
+	background-size: 100px 
+	margin: -16px 0 0 -16px
+	color: #F2EBE6
+
+
+.bg-text
+	font-size: 1296px
+	font-family: $bg-font
+	text-transform: uppercase
+	opacity: 0.61
+	color: #191e3f
+	line-height: normal
+	text-shadow: 0px 5px 152px rgba(0, 0, 0, 0.45)
+	display: inline-block
+	position: absolute
+
+.tagline
+	.vertical-txt
+		position: absolute
+		float: left
+		-webkit-transform: rotate(270deg) 
+		-moz-transform: rotate(270deg) 
+		-ms-transform: rotate(270deg) 
+		-o-transform: rotate(270deg) 
+		transform: rotate(270deg) 
+		font-size: 34px
+
+.container
+	position: relative
+
+header
+	background-image: url(../img/header.jpg)
+	height: 1170px
+	background-position: top center
+	background-repeat: no-repeat
+	text-align: center
+	padding-top: 69px	
+	position: relative
+	.logo
+		height: 80px
+		width: 125px
+		background-image: url(../img/logo.svg)
+		display: inline-block
+	.toggle-menu
+		display: inline-block
+		position: fixed
+		top: 100px
+		right: 2%
+		z-index: 500
+		&:hover
+			cursor: pointer
+	.top-menu
+		position: fixed
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		background-color: rgba(0, 0, 0, 0.9);
+		z-index: 300
+		display: none
+		padding-top: 150px
+		overflow: auto
+		ul
+			li
+				margin-bottom: 25px
+				width: 100%
+				a
+					color: #fff
+					font-size: 28px
+					display: block
+					width: 100%
+					padding: 10px 0 10px 0
+					transition: all .6s
+					&:hover,&:focus,&:active
+						color: #fff
+						text-decoration: none
+						background-color: rgba(25, 30, 63, 0.3);
+						cursor: pointer
+	h1
+		margin-top: 285px
+
+section.mission
+	padding-bottom: 175px
+	.container
+		.composition
+			position: relative
+			height: auto
+			display: inline-block
+			.mission-image
+				width: 660px
+				height: 660px
+				position: relative
+				left: 160px	
+				top: 0
+				display: inline-block
+				box-shadow: -31px 175px 152px 0px rgba(0, 0, 0, 0.45); 
+			.mission-text
+				width: 480px
+				position: absolute
+				top: 40%
+				left: 685px
+				line-height: 23px
+			.acount-section
+				top: 204px
+				left: -74px
+
+.acount-section
+	position: absolute
+	z-index: 100
+	.acount-number
+		font-family: "Yantramanav Black", sans-serif
+		color: #fff
+		opacity: 0.02
+		font-size: 286px
+		line-height: 1
+		letter-spacing: -17px
+	.acount-name
+		position: absolute
+		top: 115px
+		left: 81px
+
+.composition
+	position: relative
+	height: auto
+
+section.projects
+	height: 1365px
+	background-image: url(../img/secrtion-projects.jpg)
+	background-position: top center
+	background-repeat: no-repeat
+	.composition
+		width: 100%
+		.bg-text
+			top: -172px
+			left: -223px
+			line-height: 1.05
+		.proj_logo
+			width: 90%
+			position: absolute
+			top: 328px;
+			left: 21px;
+			ul
+				li
+					display: inline-block
+					margin-right: 83px
+					margin-bottom: 100px
+					float: left
+					&:nth-child(1)
+						img
+							width: 207px
+							height: 66px
+					&:nth-child(2)
+						img
+							width: 253px
+							height: 56px
+					&:nth-child(3)
+						img
+							width: 221px
+							height: 80px
+					&:nth-child(4)
+						img
+							width: 177px
+							height: 59px
+					&:nth-child(5)
+						img
+							width: 240px
+							height: 53px
+					&:nth-child(6)
+						img
+							width: 224px
+							height: 45px
+		.acount-section
+			top: 127px
+			right: -27px
+
+section.team
+	height: 2300px
+	.container
+		.bg-text
+			top: 255px
+			left: 172px
+		.acount-section
+			top: -9px
+			left: -60px
+			.acount-name
+				top: 116px
+				left: 102px
+		.team-item
+			position: absolute
+			top: 51px
+			left: 405px
+			.team_pic
+				box-shadow: 0px 178px 152px 0px rgba(0, 0, 0, 0.45);
+				img
+					width: 660px
+			.team-about
+				position: absolute
+				top: 316px
+				left: -169px
+				width: 100%
+				.team-line
+					width: 56px
+					height: 4px
+					display: block
+					border-top: 5px #fff solid
+					margin-bottom: 29px
+				.team-name
+					font-size: 38px
+					margin-bottom: 17px
+				.team-post
+					font-size: 18px
+					opacity: .5
+					letter-spacing: 0.5px
+				.team-text
+					margin-top: 44px
+					margin-left: 3px
+					p
+						font-size: 15px
+						width: 326px
+						opacity: .8
+						line-height: 18px
+						margin-bottom: 3px
+			&:nth-child(4)
+				top: 863px
+				left: -16px
+				.team_pic
+					img
+						box-shadow: 0px 178px 152px 0px rgba(0, 0, 0, 0.45);
+						width: 405px
+				.team-about
+					top: 212px
+					left: 341px
+					.team-line
+						margin-bottom: 27px
+					.team-name
+						margin-bottom: 19px
+			&:nth-child(5)
+				top: 993px
+				left: 757px
+				.team_pic
+					img
+						box-shadow: 0px 178px 152px 0px rgba(0, 0, 0, 0.45);
+						width: 405px
+				.team-about
+					top: 250px
+					left: -25%
+					.team-line
+						margin-bottom: 27px
+					.team-name
+						margin-bottom: 19px
+			&:nth-child(6)
+				top: 1432px
+				left: 110px
+				.team_pic
+					img
+						width: 405px
+				.team-about
+					top: 246px
+					left: -99px
+					.team-line
+						margin-bottom: 27px
+					.team-name
+						margin-bottom: 19px
+			&:nth-child(7)
+				top: 1658px
+				left: 673px
+				.team_pic
+					img
+						box-shadow: 0px 178px 152px 0px rgba(0, 0, 0, 0.45);
+						width: 405px
+				.team-about
+					top: 256px
+					left: 57%
+					.team-line
+						margin-bottom: 21px
+					.team-name
+						margin-bottom: 19px
+
+section.event
+	background-image: url(../img/footer.jpg)
+	background-repeat: no-repeat
+	background-position: top center
+	height: 1317px
+	.container
+		.composition
+			height: 1100px
+			.acount-section
+				left: calc(50% - 156px)
+				top: -39px
+				.acount-name
+					left: 101px
+			.bg-text
+				left: 46%
+				top: -326px
+		.event-text
+			position: absolute
+			top: 0
+			left: 0
+			max-width: 495px
+			width: 100%
+			top: 394px
+			left: 69px
+			h1
+				letter-spacing: -4px
+				margin-bottom: 45px
+			p
+				line-height: 22px
+				margin-bottom: 24px
+		footer
+			text-align: center
+			position: relative
+			.logo
+				width: 87px
+				height: 54px
+				background-image: url(../img/logo-footer.png)
+				margin: 0 auto
+			ul
+				margin-top: 27px
+				margin-bottom: 19px
+				font-size: 0
+				li
+					display: inline-block
+					margin-right: 19px
+					&:nth-child(5)
+						margin-right: 0
+					a
+						color: #fff
+						font-size: 15px
+						text-decoration: underline
+			.copyright
+				letter-spacing: 0px
+				pl30px
+				span
+					font-size: 15px
+
+
+.sandwich 
+  width: 50px
+  height: 30px
+  margin: auto
+  .sw-top,
+  .sw-mid,
+  .sw-bot
+    position: relative
+    width: 47px
+    height: 4px
+    background: #fff
+    border: none
+    border-radius: 4px
+    transition: transform 0.5s, top 0.2s
+  .sw-top
+    top: 0
+  .sw-mid
+    top: 9px
+  .sw-bot
+    top: 40px
+
+.sandwich.active 
+  .sw-top
+    top: 9px
+    transform: rotate(140deg)
+  .sw-mid
+    top: 5px
+    transform: rotate(-140deg)
+  .sw-bot
+    opacity: 0
+    top: 0
+    transform: rotate(180deg)
+
+@import "media" // Всегда в конце

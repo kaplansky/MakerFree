@@ -1,0 +1,294 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	header h1
+		font-size: 64px
+	section.mission .container .composition .mission-text
+		left: 470px
+	section.mission .container .composition .acount-section
+		top: 100px
+		left: -24px
+	section.projects .composition .proj_logo
+		width: 100%
+	section.projects .composition .acount-section
+		top: 0
+	section.team .container .team-item
+		.team-about
+			left: -110px
+		&:nth-child(3)
+			left: 170px
+		&:nth-child(4)
+			.team-about
+				top: 30px
+				left: 322px
+		&:nth-child(5)
+			left: 545px
+			.team-about
+				top: 294px
+				left: -52px
+		&:nth-child(6)
+			left: 20px
+			top: 1500px
+			.team-about
+				top: 260px
+				left: -26px
+		&:nth-child(7)
+			left: 500px
+			.team-about
+				left: 40px
+
+	section.event .container .composition
+		.bg-text
+			left: 0
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	header h1
+		font-size: 50px
+	header .toggle-menu
+		top: 40px
+	section.mission .container .composition .mission-image
+		left: 0
+	section.mission .container .composition .mission-text
+		left: 250px
+	section.mission .container .composition .acount-section .acount-number
+		font-size: 200px
+	.tagline .vertical-txt
+		font-size: 22px
+	.acount-section
+		top: -70px
+	section.projects .composition .proj_logo ul li
+		float: none
+		margin-bottom: 50px
+	section.projects .composition .proj_logo
+		left: 0
+	section.mission .container .composition .acount-section
+		top: 0
+		left: 0
+	section.team
+		height: 3000px
+	section.team .container .bg-text
+		left: 0
+		font-size: 1000px
+	section.team .container .team-item
+		.team_pic
+			img
+				width: 555px
+		&:nth-child(3)
+			left: 170px
+		&:nth-child(4)
+			.team-about
+				top: 30px
+				left: 322px
+		&:nth-child(5)
+			z-index: 50
+			left: 310px
+			top: 1200px
+			.team-about
+				top: 290px
+				left: 12px
+		&:nth-child(6)
+			left: 20px
+			top: 1575px
+			.team-about
+				top: 260px
+				left: -26px
+		&:nth-child(7)
+			left: 300px
+			top: 2000px
+			.team-about
+				left: 40px
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+	header h1
+		font-size: 28px
+		margin-top: 150px
+	section.mission .container .composition .mission-text
+		left: 0
+		width: 420px
+		line-height: 30px
+		top: 50%
+	section.mission .container .composition
+		width: 100%
+	section.mission .container .composition .mission-image
+		width: 100%
+	.bg-text
+		font-size: 1000px
+	header .top-menu ul li
+		margin-bottom: 80px
+	header .top-menu ul li a
+		font-size: 44px
+	section.team .container
+		.bg-text	
+			left: -223px 
+		.team-item
+			.team-about
+				width: 110%
+				.team-name
+					font-size: 30px
+			&:nth-child(3)
+				left: 40px
+				img
+					width: 400px
+				.team-about
+					left: -30px
+			&:nth-child(4),&:nth-child(5),&:nth-child(6),&:nth-child(7)
+				.team_pic
+					img
+						width: 300px
+			&:nth-child(4)
+				.team-about
+					left: 125px
+					top: 150px
+			&:nth-child(5)
+				top: 1205px
+				z-index: 50
+				left: 10%
+				.team-about
+					top: 230px
+				img
+					width: 300px
+			&:nth-child(7)
+				top: 1950px
+				z-index: 50
+				left: 25%
+				.team-about
+					left: -40px
+	
+	section.event .container .composition .bg-text
+		left: -260px
+	section.event .container .event-text
+		left: 0
+	section.event .container .event-text p
+		line-height: 34px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	header h1
+		font-size: 20px
+	header .top-menu
+		padding-top: 15%
+	section.mission .container .composition .mission-text
+		left: 0
+		width: 280px		
+		line-height: 32px
+	header .top-menu ul li
+		margin-bottom: 40px
+	header .top-menu ul li a
+		font-size: 24px
+	section.projects .composition .bg-text
+		left: -380px
+	section.projects .composition .proj_logo ul li
+		margin-right: 0
+	section.projects .composition .acount-section
+		right: 0
+
+	section.team .container
+		.bg-text	
+			left: -351px 
+		.team-item
+			.team-about
+				width: 130%
+				.team-name
+					font-size: 30px
+			&:nth-child(3)
+				left: 40px
+				img
+					width: 250px
+				.team-about
+					left: -30px
+					width: 100%
+					top: 190px
+					.team-text
+						p
+							width: 290px
+			&:nth-child(4),&:nth-child(5),&:nth-child(6),&:nth-child(7)
+				.team_pic
+					img
+						width: 220px
+			&:nth-child(4)
+				.team-about
+					left: 20px
+					top: 150px
+			&:nth-child(5)
+				top: 1205px
+				z-index: 50
+				left: 0
+				.team-about
+					top: 150px
+				img
+					width: 300px
+			&:nth-child(6)
+				left: 50px
+				.team-about
+					top: 160px
+					left: -30px
+			&:nth-child(7)
+				top: 1950px
+				z-index: 50
+				left: 20%
+				.team-about
+					left: -50px
+					top: 170px
+
+	section.event .container .composition .bg-text
+		left: -300px
+
+	section.event .container .event-text h1
+		letter-spacing: 0
+		font-size: 42px
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Dvices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
